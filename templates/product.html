@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+{% include 'includes/_messages.html' %}
+<p>Your current balance is {{ balance }} MI</p>
+{% from "includes/_formhelpers.html" import render_field %}
+<form method="POST" action="">
+    <div class="card" style="width: 18rem;">
+        <img src="https://th.bing.com/th/id/R.ed278c63783d1bfe0db837841c1cfc0e?rik=6yAJ%2bTdEbHt6OA&riu=http%3a%2f%2fworthly.com%2fwp-content%2fuploads%2f2014%2f11%2f139517568.jpg&ehk=UPLkYtha5sEdRX4WRNm6EySluCleA9lrsCK2jJ6Y%2bR4%3d&risl=&pid=ImgRaw&r=0" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Nike Shoies</h5>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <div class="from-group">
+            <input class="form-control" value="500" name="amount"/>
+                      </div>
+                      <input type="submit" class="btn btn-primary mt-3" value="Send">
+          
+        </div>
+      </div>
+  
+ 
+  </br>
+  <p>
+    </p>
+</form>
+{% endblock %}
